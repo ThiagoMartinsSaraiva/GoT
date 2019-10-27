@@ -1,0 +1,105 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Darker Grotesque', sans-serif;
+    background-image: url('../images/backgroundRepeat.jpg');
+    background-position: center;
+    /* background-size: cover; */
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(90deg, #e0e0e0, #fff);
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+    box-shadow: 0 0 3px 1px #666a;
+}
+
+.header-left {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 24%;
+}
+
+.logo {
+    width: 80px;
+    transition: all .8s;
+}
+
+.logo:hover {
+    transform: scale(1.2) rotate(720deg);
+}
+
+.main-title {
+    display: inline-block;
+    font-size: 36px;
+    background: -webkit-linear-gradient(#333, #FFD859);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #333;
+    padding-right: 20px;
+    font-size: 1.3em;
+}
+
+.header-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #333;
+}
+
+main {
+    width: 70%;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 0 3px 1px #000f0066, 0 0 6px 3px #000f0000, 0 0 13px 3px #000f00aa;
+    background-color: #fff8;
+}
+
+.main-text {
+    padding: 80px 30px 20px 30px;
+    font-size: 2.8em;
+    line-height: 40px;
+}
+
+a[got-more] {
+    text-decoration: none;
+    font-size: 2em;
+    color: #fff;
+    background-color: #222;
+    padding: 15px 100px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 1px #222;
+    text-shadow: 0 0 1px #fff;
+    transition-property: color background-color box-shadow;
+    transition-duration: 500ms;
+}
+
+a[got-more]:hover {
+    color: #444;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 1px #fff;
+}
+
+footer {
+    background-color: #fffd;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+footer > p {
+    margin: 0;
+}
